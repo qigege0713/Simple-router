@@ -8,3 +8,4 @@ handle["/home"] = handler.home;
 handle["/nihao"] = handler.nihao;
 
 server.startServer(router.route,handle);
+
