@@ -6,6 +6,7 @@ var handle = {};
 handle["/"] = handler.home;
 handle["/home"] = handler.home;
 handle["/nihao"] = handler.nihao;
+handle["/json"] = handler.json;
 
 server.startServer(router.route,handle);
 

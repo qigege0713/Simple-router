@@ -11,7 +11,14 @@ function nihao(response){
     fs.createReadStream(__dirname+"/wwwroot/nihao.html","utf8").pipe(response);
 }
 
+function json(response,params){
+    response.writeHead(200,{"Content-Type":"application/json"});
+     
+    response.end(JSON.stringify(params));
+}
+
 module.exports={
-    home:home,
-    nihao:nihao
+    home,
+    nihao,
+    json
 };
